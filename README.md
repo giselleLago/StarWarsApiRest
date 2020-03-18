@@ -57,6 +57,8 @@ where each class and each method will have a single responsibility, trying to ap
 - [Aggregate](https://martinfowler.com/bliki/DDD_Aggregate.html)<br/>
 -Rebeld<br/>
 - [Seedwork](https://martinfowler.com/bliki/Seedwork.html)<br/>
+-IRegister
+-IRepository
 - [Generic Repository](https://codewithshadman.com/repository-pattern-csharp/)<br/>
 -IRepository<br/>
 - [Builder](https://refactoring.guru/design-patterns/builder)<br/>
