@@ -4,7 +4,7 @@ namespace VuelingExam.Application.Logic.DTOs
 {
     public class RebeldDto
     {
-        public IEnumerable<string> Name { get; set; }
+        public IEnumerable<string> Names { get; set; }
         public string PlanetName { get; set; }
 
     }
