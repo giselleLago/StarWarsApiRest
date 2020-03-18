@@ -3,8 +3,8 @@ using Autofac.Integration.WebApi;
 using System.Reflection;
 using VuelingExam.Aplication.Logic.AutofacModules;
 using VuelingExam.Application.Logic.Contracts;
+using VuelingExam.Application.Logic.DTOs;
 using VuelingExam.Application.Logic.Implementations;
-using VuelingExam.Domain.Entities.Aggregate;
 
 namespace VuelingExam.Business.Facade.AutofacModules
 {
@@ -15,7 +15,7 @@ namespace VuelingExam.Business.Facade.AutofacModules
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
             builder
                 .RegisterType<RebeldService>()
-                .As<IService<Rebeld>>()
+                .As<IService<RebeldDto>>()
                 .InstancePerRequest();
 
             builder.RegisterModule(new LoggingModule());
