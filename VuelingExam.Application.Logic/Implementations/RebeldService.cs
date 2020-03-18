@@ -8,7 +8,7 @@ using VuelingExam.Infrastructure.Repositories.Contracts;
 
 namespace VuelingExam.Application.Logic.Implementations
 {
-    public class RebeldService : IService<Rebeld>
+    public class RebeldService : IService<RebeldDto>
     {
         readonly IInfrastructureRepository<Rebeld> rebeldRepository = null;
         private readonly ILog logger = null;
@@ -23,23 +23,27 @@ namespace VuelingExam.Application.Logic.Implementations
             this.logger = logger;
         }
 
-        public Rebeld Register(Rebeld entity)
+        public bool Register(RebeldDto dto)
         {
-            if (entity == null)
+            if (dto == null)
             {
-                throw new ArgumentNullException(nameof(entity));
+                throw new ArgumentNullException(nameof(dto));
             }
-            entity.DateTime = DateTime.Now;
-            return rebeldRepository.Register(entity);
+            var rebeld = ToRebelds(dto);
+            foreach (var item in rebeld)
+            {
+                rebeldRepository.Register(item);
+            }
+            return true;
         }
 
-        private IEnumerable<Rebeld> ToRebeld(RebeldDto rebeldDto)
+        private IEnumerable<Rebeld> ToRebelds(RebeldDto rebeldDto)
         {
             var rebeldList = new List<Rebeld>();
-            var rebeldNames = rebeldDto.Name;
+            var rebeldNames = rebeldDto.Names;
             foreach (var item in rebeldNames)
             {
-                rebeldList.Add(new Rebeld { Name = item, PlanetName = rebeldDto.PlanetName });
+                rebeldList.Add(new Rebeld { Name = item, PlanetName = rebeldDto.PlanetName, DateTime = DateTime.Now });
             }
             return rebeldList;
         }
