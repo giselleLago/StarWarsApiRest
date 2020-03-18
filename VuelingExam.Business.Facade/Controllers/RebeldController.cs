@@ -15,9 +15,9 @@ namespace VuelingExam.Business.Facade.Controllers
         {
         }
 
-        public RebeldController(ILog logger, IService<RebeldDto> rebeldRepository)
+        public RebeldController(ILog logger, IService<RebeldDto> rebeldService)
         {
-            this.rebeldRepository = rebeldRepository;
+            this.rebeldRepository = rebeldService;
             this.logger = logger;
         }
 
