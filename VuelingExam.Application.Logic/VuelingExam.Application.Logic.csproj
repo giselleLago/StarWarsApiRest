@@ -59,6 +59,8 @@
   <ItemGroup>
     <Compile Include="AutofacModule\ServiceModule.cs" />
     <Compile Include="Contracts\IService.cs" />
+    <Compile Include="DTOs\RebeldDTO.cs" />
+    <Compile Include="Implementations\RebeldService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -76,8 +78,6 @@
     <None Include="log4net.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Implementations\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
