@@ -1,7 +1,7 @@
 ﻿using Autofac;
-using VuelingExam.Domain.Entities;
+using VuelingExam.Domain.Entities.Aggregate;
 using VuelingExam.Infrastructure.Repositories.Contracts;
-using VuelingExam.Infrastructure.Repositories.Implementations;
+using VuelingExam.Infrastructure.Repository.Implementations;
 
 namespace VuelingExam.Aplication.Logic.AutofacModules
 {
@@ -11,8 +11,8 @@ namespace VuelingExam.Aplication.Logic.AutofacModules
         {
 
             builder
-                .RegisterType<T>()
-                .As<IInfrastructureRepository<T>>()
+                .RegisterType<RebeldRepository>()
+                .As<IInfrastructureRepository<Rebeld>>()
                 .InstancePerRequest();
 
             base.Load(builder);
