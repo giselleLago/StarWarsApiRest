@@ -75,15 +75,15 @@ where each class and each method will have a single responsibility, trying to ap
 *KISS* Keep it simple stupid
 ```
 
-**Class and Implementation**<br/>
+**Class and Implementation:**<br/>
+
 **Business Facade**<br/>
 **AutofacConfiguration** <br/> Se configura Autofac para inyectar todas las capas desde que arranque la aplicacion<br /> 
 **WebApiConfiguration**<br/> Configuracion y servicios de la Api, defino la ruta y agrego los filtros.<br/>
 **FacadeModule**<br/> Business Facade Layer module, injected from AutofacConfiguration and in turn injects ServiceModule.<br/>
 **LoggingModule**<br/> Log4net is activated by events.<br/>
 **IController**<br/> Controller interface.<br/>
-**RebeldController**<br/> Controller class, implements IController and apply the HTTPverbs.
-
+**RebeldController**<br/> Controller class, implements IController and apply the HTTPverbs.<br/>
 **NotImplementationFilterAttribute**<br/> Class that catches the exception filters between the web server and the web client. <br/>
 
 **Application Logic**<br/>
