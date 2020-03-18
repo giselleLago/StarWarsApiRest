@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Business Facade", "1. Business Facade", "{50D54BE9-256C-4C5B-B590-EBBC48CCC294}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Application Logic", "2. Application Logic", "{973E5D35-3E43-4E7C-8794-FEAC64658935}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Infrastructure Repository", "3. Infrastructure Repository", "{2B603A2D-BD34-45F7-B349-34CDA2FE6641}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Domain Entities", "4. Domain Entities", "{E42A5021-FF25-434C-B856-20ACD470B128}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Tests Libraries", "5. Tests Libraries", "{ECDDACE5-97EA-4739-A186-5C0CF5145BEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuelingExam.Domain.Entities", "VuelingExam.Domain.Entities\VuelingExam.Domain.Entities.csproj", "{99ADFCE1-C262-4880-9853-0E9C339BA67C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuelingExam.Infrastructure.Repository", "VuelingExam.Infrastructure.Repository\VuelingExam.Infrastructure.Repository.csproj", "{0023DAB9-0569-4182-B878-14FD79AA65FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuelingExam.Application.Logic", "VuelingExam.Application.Logic\VuelingExam.Application.Logic.csproj", "{BA2ECB7A-075C-42C3-874A-BBA52DB6480B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuelingExam.Business.Facade", "VuelingExam.Business.Facade\VuelingExam.Business.Facade.csproj", "{63971671-9104-408D-880A-C241E0CA0B29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuelingExam.Business.Facade.Unit.Tests", "1. Business Facade\VuelingExam.Business.Facade.Unit.Tests\VuelingExam.Business.Facade.Unit.Tests.csproj", "{13F82520-1CA4-4A87-82DD-A3E80CF5194E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuelingExam.Tests.Framework", "VuelingExam.Tests.Framework\VuelingExam.Tests.Framework.csproj", "{1439F10A-C670-45A5-ACF5-59D1B852BC7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99ADFCE1-C262-4880-9853-0E9C339BA67C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99ADFCE1-C262-4880-9853-0E9C339BA67C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99ADFCE1-C262-4880-9853-0E9C339BA67C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99ADFCE1-C262-4880-9853-0E9C339BA67C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0023DAB9-0569-4182-B878-14FD79AA65FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0023DAB9-0569-4182-B878-14FD79AA65FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0023DAB9-0569-4182-B878-14FD79AA65FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0023DAB9-0569-4182-B878-14FD79AA65FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA2ECB7A-075C-42C3-874A-BBA52DB6480B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA2ECB7A-075C-42C3-874A-BBA52DB6480B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA2ECB7A-075C-42C3-874A-BBA52DB6480B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA2ECB7A-075C-42C3-874A-BBA52DB6480B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63971671-9104-408D-880A-C241E0CA0B29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63971671-9104-408D-880A-C241E0CA0B29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63971671-9104-408D-880A-C241E0CA0B29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63971671-9104-408D-880A-C241E0CA0B29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13F82520-1CA4-4A87-82DD-A3E80CF5194E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13F82520-1CA4-4A87-82DD-A3E80CF5194E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13F82520-1CA4-4A87-82DD-A3E80CF5194E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13F82520-1CA4-4A87-82DD-A3E80CF5194E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1439F10A-C670-45A5-ACF5-59D1B852BC7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1439F10A-C670-45A5-ACF5-59D1B852BC7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1439F10A-C670-45A5-ACF5-59D1B852BC7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1439F10A-C670-45A5-ACF5-59D1B852BC7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{99ADFCE1-C262-4880-9853-0E9C339BA67C} = {E42A5021-FF25-434C-B856-20ACD470B128}
+		{0023DAB9-0569-4182-B878-14FD79AA65FB} = {2B603A2D-BD34-45F7-B349-34CDA2FE6641}
+		{BA2ECB7A-075C-42C3-874A-BBA52DB6480B} = {973E5D35-3E43-4E7C-8794-FEAC64658935}
+		{63971671-9104-408D-880A-C241E0CA0B29} = {50D54BE9-256C-4C5B-B590-EBBC48CCC294}
+		{13F82520-1CA4-4A87-82DD-A3E80CF5194E} = {50D54BE9-256C-4C5B-B590-EBBC48CCC294}
+		{1439F10A-C670-45A5-ACF5-59D1B852BC7B} = {ECDDACE5-97EA-4739-A186-5C0CF5145BEE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B08CC8A-FFAF-40ED-8EA6-9299AB4AE48E}
+	EndGlobalSection
+EndGlobal
