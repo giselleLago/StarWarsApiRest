@@ -14,8 +14,8 @@ where each class and each method will have a single responsibility, trying to ap
 **Single Responsibility**
 ```
 “class should be having one and only one responsibility”
-	-RebeldController<br/>
-	-RebeldService<br/>
+	-RebeldController
+	-RebeldService
 	-RebeldRepository
 ```
 **Open-Closed**
@@ -30,18 +30,18 @@ where each class and each method will have a single responsibility, trying to ap
 **Interface Segregation**
 ```
 “many client specific interfaces are better than one general interface”
-- IRepository<br/>
-- IRegister<br/>
-- IInfrastructureReposiotry<br/>
-- IService<br/>
+- IRepository
+- IRegister
+- IInfrastructureReposiotry
+- IService
 ```
 **Dependency Injection**
 ```
 “classes should depend on abstraction but not on concretion”
-- AutofacConfiguration<br/>
-- FacadeModule<br/>
-- ServiceModule<br/>
-- ILog<br/>
+- AutofacConfiguration
+- FacadeModule
+- ServiceModule
+- ILog
 ```
 
 **2 - DDD Architecture**
@@ -71,8 +71,8 @@ where each class and each method will have a single responsibility, trying to ap
 **4 - Clean Code**
 
 ```
-*DRY* Don’t repeat yourself<br/>
-*KISS* Keep it simple stupid<br/>
+*DRY* Don’t repeat yourself
+*KISS* Keep it simple stupid
 ```
 
 **Class and Implementation**<br/>
@@ -104,7 +104,7 @@ where each class and each method will have a single responsibility, trying to ap
 **Test Libraries**
 ```
 IoCSupportedTest
-Create the Container and resolve dependencies with Container.Resolve<T>().<br/>
+Create the Container and resolve dependencies with Container.Resolve<T>().
 LoggingModule
 Log4net is activated by events.
 ```
