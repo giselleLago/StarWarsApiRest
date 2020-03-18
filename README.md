@@ -14,9 +14,9 @@ where each class and each method will have a single responsibility, trying to ap
 **Single Responsibility**
 ```
 “class should be having one and only one responsibility”
-	-RebeldController
-	-RebeldService
-	-RebeldRepository
+ -RebeldController
+ -RebeldService
+ -RebeldRepository
 ```
 **Open-Closed**
 ```
