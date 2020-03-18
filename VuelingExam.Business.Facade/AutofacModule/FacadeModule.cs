@@ -2,9 +2,9 @@
 using Autofac.Integration.WebApi;
 using System.Reflection;
 using VuelingExam.Aplication.Logic.AutofacModules;
-using VuelingExam.Application.Logic;
 using VuelingExam.Application.Logic.Contracts;
-using VuelingExam.Domain.Entities;
+using VuelingExam.Application.Logic.Implementations;
+using VuelingExam.Domain.Entities.Aggregate;
 
 namespace VuelingExam.Business.Facade.AutofacModules
 {
@@ -14,8 +14,8 @@ namespace VuelingExam.Business.Facade.AutofacModules
         {
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
             builder
-                .RegisterType<T>()
-                .As<IService<T>>()
+                .RegisterType<RebeldService>()
+                .As<IService<Rebeld>>()
                 .InstancePerRequest();
 
             builder.RegisterModule(new LoggingModule());
