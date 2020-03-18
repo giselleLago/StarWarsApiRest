@@ -5,6 +5,7 @@ using VuelingExam.Application.Logic.Contracts;
 using VuelingExam.Application.Logic.DTOs;
 using VuelingExam.Domain.Entities.Aggregate;
 using VuelingExam.Infrastructure.Repositories.Contracts;
+using System.Linq;
 
 namespace VuelingExam.Application.Logic.Implementations
 {
@@ -41,10 +42,7 @@ namespace VuelingExam.Application.Logic.Implementations
         {
             var rebeldList = new List<Rebeld>();
             var rebeldNames = rebeldDto.Names;
-            foreach (var item in rebeldNames)
-            {
-                rebeldList.Add(new Rebeld { Name = item, PlanetName = rebeldDto.PlanetName, DateTime = DateTime.Now });
-            }
+            rebeldList.AddRange(rebeldNames.Select(item => new Rebeld { Name = item, PlanetName = rebeldDto.PlanetName, DateTime = DateTime.Now }));
             return rebeldList;
         }
     }
