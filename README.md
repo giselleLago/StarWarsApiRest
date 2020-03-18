@@ -13,7 +13,7 @@ where each class and each method will have a single responsibility, trying to ap
 **1 - SOLID**
 **Single Responsibility**
 ```
-“class should be having one and only one responsibility”<br/>
+“class should be having one and only one responsibility”
 	-RebeldController<br/>
 	-RebeldService<br/>
 	-RebeldRepository
@@ -29,7 +29,7 @@ where each class and each method will have a single responsibility, trying to ap
 ```
 **Interface Segregation**
 ```
-“many client specific interfaces are better than one general interface”<br/>
+“many client specific interfaces are better than one general interface”
 - IRepository<br/>
 - IRegister<br/>
 - IInfrastructureReposiotry<br/>
