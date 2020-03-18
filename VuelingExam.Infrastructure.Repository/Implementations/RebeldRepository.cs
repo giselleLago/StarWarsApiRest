@@ -30,6 +30,7 @@ namespace VuelingExam.Infrastructure.Repository.Implementations
             {
                 throw new ArgumentNullException(nameof(entity));
             }
+
             File.AppendAllText(FileName, $"rebeld {entity.Name} on {entity.PlanetName} at {entity.DateTime}{Environment.NewLine}");
             return entity;
         }
