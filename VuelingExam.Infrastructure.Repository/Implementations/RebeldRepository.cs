@@ -6,7 +6,7 @@ using VuelingExam.Infrastructure.Repositories.Contracts;
 
 namespace VuelingExam.Infrastructure.Repository.Implementations
 {
-    class RebeldRepository : IInfrastructureRepository<Rebeld>
+    public class RebeldRepository : IInfrastructureRepository<Rebeld>
     {
         private readonly ILog logger = null;
         private readonly string FileName;
@@ -30,7 +30,7 @@ namespace VuelingExam.Infrastructure.Repository.Implementations
             {
                 throw new ArgumentNullException(nameof(entity));
             }
-            File.AppendAllText(FileName, $"rebeld {entity.Name} on {entity.PlanetName} at {entity.DateTime}");
+            File.AppendAllText(FileName, $"rebeld {entity.Name} on {entity.PlanetName} at {entity.DateTime}{Environment.NewLine}");
             return entity;
         }
     }
